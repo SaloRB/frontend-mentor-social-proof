@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --magenta-100: hsl(300, 24%, 96%);
+  --magenta-300: hsl(303, 10%, 53%);
+  --magenta-700: hsl(300, 43%, 22%);
+
+  --pink: hsl(333, 80%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  width: 350px;
+  margin: 0 auto;
+  background-image: url('./images/bg-pattern-top-mobile.svg'),
+    url('./images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: var(--magenta-700);
+  margin-top: 4rem;
+}
+
+.header p {
+  color: var(--magenta-300);
+  line-height: 1.5;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+.ratings {
+  margin-bottom: 2rem;
+}
+
+.rating {
+  background-color: var(--magenta-100);
+  color: var(--magenta-700);
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.rating h2 {
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+.card {
+  background-color: var(--magenta-700);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.card .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card .card-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.card-name h3 {
+  color: var(--magenta-100);
+  font-weight: 500;
+}
+
+.card-name h4 {
+  color: var(--pink);
+  font-weight: 400;
+}
+
+.card p {
+  color: var(--magenta-100);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    background-image: url('./images/bg-pattern-top-desktop.svg'),
+      url('./images/bg-pattern-bottom-desktop.svg');
+    background-position: top, bottom;
+    height: 100vh;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+  }
+
+  .header {
+    text-align: left;
+    width: 450px;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .ratings {
+    width: 450px;
+    margin-bottom: 0;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 440px;
+    padding: 1.25rem 2rem;
+  }
+
+  .rating:nth-of-type(2) {
+    margin-left: 40px;
+  }
+
+  .rating:nth-of-type(3) {
+    margin-left: 80px;
+  }
+
+  .rating h2 {
+    margin-left: 2rem;
+  }
+
+  .rating img {
+    margin-right: .5rem;
+  }
+
+  .bottom {
+    width: 1000px;
+  }
+
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    height: 300px;
+  }
+
+  .card {
+    width: 320px;
+    height: 250px;
+    margin: 1rem;
+    margin-bottom: 0;
+  }
+
+  .card:nth-of-type(1) {
+    align-self: start;
+    margin-left: 0;
+  }
+
+  .card:nth-of-type(2) {
+    align-self: center;
+  }
+
+  .card:nth-of-type(3) {
+    align-self: end;
+    margin-right: 0;
+  }
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700 */
